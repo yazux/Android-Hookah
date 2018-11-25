@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_vendors"
+        android:icon="@drawable/ic_smoking_rooms_black_24dp"
+        android:title="Vendors" />
+
+    <item
+        android:id="@+id/navigation_mixes"
+        android:icon="@drawable/ic_donut_large_black_24dp"
+        android:title="Mixes" />
+
+    <item
+        android:id="@+id/navigation_bookmarks"
+        android:icon="@drawable/ic_bookmark_border_black_24dp"
+        android:title="Bookmarks" />
+</menu>

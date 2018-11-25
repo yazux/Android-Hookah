@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/mixItemScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ebebf1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ebebf1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0"
+                android:background="@drawable/rounded_corners_white"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingRight="10dp">
+
+                <ru.lets_code.example1.View.NestedListView
+                    android:id="@+id/mixItemProgressContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="mixItemProgressContainer">
+                </ru.lets_code.example1.View.NestedListView>
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0"
+                android:background="@drawable/rounded_corners_white"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/mixItemStowageImage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/circle_gray"
+                        android:tag="mixItemImage"
+                        app:srcCompat="@drawable/ic_clear_all_black_24dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/mixItemStowage"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:minHeight="?android:attr/listPreferredItemHeight"
+                        android:tag="mixItemStowage"
+                        android:text="@string/string_mix_stowage"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </LinearLayout>
+
+                <com.nex3z.flowlayout.FlowLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/mixItemStowageValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="mixItemStowageValue"
+                    app:flChildSpacing="6dp"
+                    app:flChildSpacingForLastRow="6dp"
+                    app:flRowSpacing="6dp"></com.nex3z.flowlayout.FlowLayout>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0"
+                android:background="@drawable/rounded_corners_white"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/mixItemLiquidImage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/circle_gray"
+                        android:tag="mixItemImage"
+                        app:srcCompat="@drawable/ic_invert_colors_black_24dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/mixItemLiquid"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:minHeight="?android:attr/listPreferredItemHeight"
+                        android:tag="mixItemLiquid"
+                        android:text="@string/string_mix_liquid"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </LinearLayout>
+
+                <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/mixItemLiquidValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:tag="mixItemLiquidValue"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0"
+                android:background="@drawable/rounded_corners_white"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/mixItemCoalImage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/circle_gray"
+                        android:tag="mixItemImage"
+                        app:srcCompat="@drawable/ic_bubble_chart_black_24dp" />
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/mixItemCoal"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:minHeight="?android:attr/listPreferredItemHeight"
+                        android:tag="mixItemCoal"
+                        android:text="@string/string_mix_coal_count"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </LinearLayout>
+
+                <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/mixItemCoalValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:tag="mixItemCoalValue"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0"
+                android:background="@drawable/rounded_corners_white"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/mixItemDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:tag="mixItemDescription"
+                    android:textSize="18sp" />
+
+                <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/mixItemAdditionally"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:tag="mixItemAdditionally"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

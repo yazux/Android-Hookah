@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">example1</string>
+    <string name="no_internet_connection">Отсутствует подключение к интернету</string>
+    <string name="yes_internet_connection">Вы подключены к сети интернет</string>
+    <string name="data_loading_fail">Ошибка загрузки, проверьте ваше подключение к интернету</string>
+    <string name="string_mix_stowage">Укладка табака</string>
+    <string name="string_mix_liquid">Наполнитель колбы</string>
+    <string name="string_mix_coal_count">Количество углей</string>
+</resources>

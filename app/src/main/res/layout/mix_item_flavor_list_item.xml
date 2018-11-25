@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="20dp">
+
+            <ProgressBar
+                android:id="@+id/mixItemFlavorProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_shape"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="65"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:tag="mixItemFlavorProgress"></ProgressBar>
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mixItemFlavorPercentValue"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:tag="mixItemFlavorPercentValue"
+                android:text="65%"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mixItemFlavorValue"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:tag="mixItemFlavorValue"
+                android:text="Яблоко"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mixItemFlavorVendorValue"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:tag="mixItemFlavorVendorValue"
+                android:text="fumari"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
